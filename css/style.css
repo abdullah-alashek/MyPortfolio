@@ -1,0 +1,267 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Arbutus Slab', serif;
+}
+
+nav{
+  z-index: 10;
+  position: fixed !important;
+  width: 100%;
+  transition: all 0.5s;
+  height: auto;
+}
+nav:hover{
+  box-shadow: 3px 0px 10px 0.2px #00000026;
+  background-color: white !important;
+}
+
+.newc{
+  box-shadow: 3px 0px 10px 0.2px #00000026;
+  background-color: white !important;
+}
+nav .collapse li a{
+  color: #000;
+}
+nav .collapse li a:hover{
+  color: #207561 !important;
+}
+nav .collapse  .me a{
+  color: #207561 !important;
+}
+
+#myDiv{
+  color: #207561 !important;
+  margin-left: 20px;
+  font-size: 24px;
+}
+nav button:focus {
+  outline: none !important;
+  border: none !important;
+}
+.container .navbar-brand span {
+  color: #ff5011;
+}
+.hero {
+  height: 100vh;
+  background-color: #f6f6f6;
+} 
+.hero img{
+  max-width: 950px;
+  height: 100%;
+} 
+
+.hero .container{
+  margin: 0px 100px !important ;
+  z-index: 2;
+}
+.hero .container h1{
+  font-size: 2.2rem !important;
+  margin-bottom: 15px !important;
+}
+.hero .container p{
+  font-size: 1rem !important;
+  margin-bottom: 35px !important;
+  width: 50%;
+  text-align: justify;
+  color: #000000ce !important;
+}
+.hero .container a , .about .container a{
+  font-size: 1.1rem !important;
+  width: fit-content;
+  background-color: #207561;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.hero .container a:hover , .about .container a:hover{
+  background-color: #000;
+}
+
+/* .services .container {
+  background-color: #207561 !important;
+}  */
+.services .cards .card {
+  /* width: 48% !important; */
+  border: none;  
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.193);
+  transition: all 0.5s;
+}
+.services .cards .card:hover{
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.165);
+  transform: scale(1.02);
+}
+.services .cards .card p{
+  color: #666; 
+  font-size: 0.9rem !important; 
+  width: 91%;
+}
+.about .cards .card{
+  border: none; 
+}
+.about .cards .card img{
+  background-color: #c8c3c32c;
+}
+.about .cards .card p{
+  color: #666; 
+  width: 100%;
+}
+
+.portfolio .cards .card{
+  position: relative;
+  /* width: 31% !important;
+  margin: 0px !important; */
+  overflow: hidden; /* to clip the image that exceeds the container */
+  transition: all 1s;
+
+}
+.portfolio .cards .card{
+  border: none;  
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.333);
+  transition: all 0.5s;
+}
+
+.portfolio .cards .card a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000c0;
+  font-size: 32px;
+  opacity: 0;
+  z-index: 6;
+  transition: all 1s;
+}
+.portfolio .cards .card img{
+  overflow: clip;
+  transition: all 1s;
+  object-fit: cover;
+
+}
+.portfolio .cards .card:hover img{
+  overflow: clip;
+  transform: scale(1.1);
+}  
+.portfolio .cards .card a:hover{
+  opacity: 1;
+
+} 
+
+.testimonials{
+  background-color: #343a40 !important;
+}
+.testimonials h3{
+  color:#fff;
+  font-size: 1.8rem !important;
+  margin: 20px 0px !important;
+}
+.testimonials .carousel-item p {
+  margin: 0 auto;
+  margin-bottom: 50px !important;
+  text-align: center;
+  width: 70% !important;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.testimonials .carousel-indicators button{
+  width: 10px !important;
+  height: 10px;
+  border-radius:50% ;
+  margin-right: 10px;
+}
+.contact{
+  margin-top: 100px !important;
+}
+.contact form .form-group input{
+  outline: none !important;
+  padding: 10px 0px;
+  width: 100%;
+  outline: auto;
+  border: 0;
+  border-bottom: 1px solid #a9a7a7;
+  border-radius: 0px !important;
+}
+.contact form textarea{
+  outline: none !important;
+  padding: 10px 0px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #a9a7a7;
+  border-radius: 0px !important;
+  columns: 4;
+}
+.contact form .form-group  input:focus, .contact form textarea:focus {
+  border-bottom: 1px solid #353434;
+
+}
+.contact form .btn{
+  font-size: 1.1rem !important;
+  width: fit-content;
+  background-color: #207561 !important;
+  color: white;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.contact form .btn:hover{
+  background-color: #000 !important;
+}
+
+.footer{
+  background-color: #f6f6f6 !important;
+  padding: 100px 0px;
+}
+.footer .container{
+  text-align: center;
+}
+.footer .container .row h3{
+  font-size: 18px;
+  margin: 20px 0px !important;
+}
+.footer .container .row li{
+  margin: 10px 0px !important;
+}
+.footer .container .row a{
+  font-size: 14px !important;
+  text-decoration: none;
+  color: #888;
+  margin: 10px 0px !important;
+}
+.footer .container .row a:hover{
+  color: #207561;
+}
+.footer .container .address p, .footer .container .copyright p{
+  color: #888 !important;
+  font-size: 14px !important;
+}
+.footer .container .copyright p a{
+  color: #9d9c9c !important;
+}
+
+@media screen and (max-width: 700px) {
+  .hero .container{
+    margin: 0px !important;
+  }
+  .hero .container p{
+    font-size: 1rem !important;
+    margin-bottom: 35px !important;
+    width: 100%;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 425px) {
+
+  .hero .container h1{
+    font-size: 1.7em !important;
+  }
+}
